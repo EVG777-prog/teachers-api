@@ -6,6 +6,7 @@ import {
   Param,
   Post,
   Put,
+  Query,
 } from '@nestjs/common';
 import { TeachersService } from './teachers.service';
 import { CreateTeacherDto } from './dto/create-teacher.dto';
@@ -23,6 +24,11 @@ export class TeachersController {
   @Get()
   async findAll() {
     return await this.teachersService.findAll();
+  }
+
+  @Get()
+  async findByLang(@Query('lang') lang: string) {
+    return await this.teachersService.findByLang(lang);
   }
 
   @Get(':id')

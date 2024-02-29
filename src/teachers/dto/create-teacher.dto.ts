@@ -3,4 +3,5 @@ export class CreateTeacherDto {
   readonly name: string;
   readonly description: string;
   readonly photo: string;
+  readonly lang: string;
 }

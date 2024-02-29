@@ -24,6 +24,10 @@ export class TeachersService {
     return this.teacherModel.findById(id).exec();
   }
 
+  async findByLang(lang: string) {
+    return await this.teacherModel.find({ lang }).exec();
+  }
+
   async update(
     id: string,
     updateTeacherDto: UpdateTeacherDto,

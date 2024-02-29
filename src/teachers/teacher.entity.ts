@@ -3,4 +3,5 @@ export class Teacher {
   name: string;
   description: string;
   photo: string;
+  lang: string;
 }
