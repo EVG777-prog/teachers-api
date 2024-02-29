@@ -1,9 +1,2 @@
 build = "npm run build"
 publish = "npm run publish"
-
-[build]
-  command = "npm run build"
-  functions = "dist/functions"
-
-[publish]
-  command = "npm run publish"
